@@ -341,6 +341,56 @@ nav .menu-btn, .menu-icon{
 
 
 /*RESPONSIVE*/
+@media (max-width: 1190px){
+	/*.main{
+		background-size: 1150px;
+	}*/
+	.main-heading{
+		left: 10%;
+		top: 50;
+		transform: translate(-10%, -50%);
+	}
+	.about-image img{
+		height: 400px;
+	}
+	#movies{
+		height: auto;
+	}
+	.movie-container{
+		flex-wrap: wrap;
+	}
+	.movie-image img{
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 600px){
+	.main-heading{
+		width: 60%;
+	}
+}
+
+@media(max-width: 970px){
+	.main-heading{
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	.about-image{
+		display: none;
+	}
+	#about{
+		justify-content: center;
+		padding-top: 0px;
+		text-align: center;
+	}
+	.about-text{
+		width: 90%;
+	}
+}
+
+
 @media(max-width: 1100px){
 	.menu-icon{
 		display: block;
@@ -350,7 +400,12 @@ nav .menu-btn, .menu-icon{
 		height: 65px;
 		padding: 0px 30px;
 	}
-
+	.logo img{
+		width: 70px;
+	}
+	.header-btns{
+		margin-left: 20%;
+	}
 	.menu{
         display: none;
         position: absolute;
